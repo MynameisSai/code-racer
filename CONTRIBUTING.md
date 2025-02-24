@@ -25,7 +25,7 @@ Commit: [2] feat: add docker container for postgres
 ## Prerequisites
 
 You will need to [install docker](https://www.docker.com/get-started/) on your local machine.
-
+You will need to [install git](https://github.com/git-for-windows/git/releases/download/v2.48.1.windows.1/Git-2.48.1-64-bit.exe) on your local
 If you do not have docker, go here to download and install: <https://www.docker.com/get-started/>
 
 If you see error starting db on M1 mac, you may need to update your docker config file at `~/.docker/config.json`
@@ -44,7 +44,7 @@ If you are getting WSL error when you launch your desktop docker application, go
 
 To get started with Code Racer locally, follow these steps
 
-1. Make sure you have installed Docker locally (See above Prerequisites)
+1. Make sure you have installed Docker locally and also make sure you have installed git (See above Prerequisites)
 
 2. Fork the repository as your own repo
 
@@ -69,10 +69,10 @@ To get started with Code Racer locally, follow these steps
    ```sh
    npm i
    ```
-   
+
 8. Start the Database
-    If you are using Docker don't forget to run `docker-compose up` to start the database.
-    (Optional if using Docker for managing the database): Start the Database.
+   If you are using Docker don't forget to run `docker-compose up` to start the database.
+   (Optional if using Docker for managing the database): Start the Database.
 
    ```sh
    npm run dev:db
@@ -83,11 +83,13 @@ To get started with Code Racer locally, follow these steps
    ```sh
    npm run dev:app
    ```
+
 10. Start the web socket server
 
-   ```sh
-   npm run dev:wss
-   ```
+```sh
+npm run dev:wss
+```
+
 Open your browser and visit <http://localhost:3000> to see the application running.
 
 ## Working on New Features
